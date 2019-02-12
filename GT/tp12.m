@@ -1,5 +1,5 @@
 %question 2
-n=199;
+n=175;
 N=n+1;
 alpha=1;
 beta=1;
@@ -13,7 +13,7 @@ bord(1:N/2)=alpha*x.^2;
 x=sparse(linspace(0.5,1,N/2+1));
 bord(N/2:N)=beta*x.^2;
 uex=x1.*x2.*(x1-1).^3.*(x2-1).^3;
-[X,err2]=fct(f,bord,uex);
+[X,err]=fct(f,bord,uex);
 X=reshape(X',N,N);
-plot(x1,X(100,:))
+plot(x1,X(1,:))
 err;

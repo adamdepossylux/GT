@@ -1,6 +1,6 @@
 %question 1
 n=[10,20,40,80,160,320];
-d=5;
+d=6;
 err=zeros(d,1);
 for i=1:d
     N=n(i)+1;
