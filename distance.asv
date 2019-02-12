@@ -1,0 +1,6 @@
+function d=distance(T,epsilon)
+    dim=size(T);
+    [nx,ny]=dim;
+    f=zeros((nx+1)^2);
+    f
+end
