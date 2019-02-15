@@ -1,6 +1,6 @@
 function [ma,d]=distance(n,epsilon)
     N=n+1;
-    f=sparse(zeros(N));
+    f=sparse(N,N);
     f(1,1:N)=1;%bas
     f(1:N,N)=1;%droite
     f(N,1:N)=1;%haut
